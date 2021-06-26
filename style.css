@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', Sans-Serif;
+  text-decoration: none;
+  
+}
+
+body {
+  
+  display: flex;
+  line-height: 1.7;
+  
+}
+
+#navbar {
+  width: 800px;
+  
+  border-right: 3px solid #333;
+}
+
+#navbar a {
+  display: block;
+  margin: 20px;
+  color: black;
+  border-bottom: 3px solid #333;
+}
+
+header {
+  font-weight: 700;
+}
+
+span {
+  font-weight: 600;
+}
+
+code pre {
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+#main-doc {
+  padding: 20px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    flex-direction: column;
+  }
+  #navbar {
+    width: 100%;
+    border-right: none;
+    height: 200px;
+    overflow-y: scroll;
+    border-bottom: 3px solid #333;
+  }
+  #main-doc {
+    overflow-y: unset;
+  }
+}
